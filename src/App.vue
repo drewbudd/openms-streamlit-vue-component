@@ -61,6 +61,7 @@ export default defineComponent({
   },
   methods: {
     updateStreamlitData(event: EventTargetShim.Event): void {
+      console.log((event as CustomEvent<RenderData>).detail)
       this.streamlitDataStore.updateRenderData((event as CustomEvent<RenderData>).detail)
     },
     componentGridStyles(componentLayout?: ComponentLayout) {

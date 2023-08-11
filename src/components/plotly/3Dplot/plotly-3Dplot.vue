@@ -75,7 +75,6 @@ export default defineComponent({
       const maxZ = this.args.signal_z.concat(this.args.noise_z).reduce((a, b)=>Math.max(a, b), -Infinity)
       return {
         title: this.args.title,
-        height: 800,
         paper_bgcolor: this.theme?.backgroundColor,
         plot_bgcolor: this.theme?.secondaryBackgroundColor,
         font: {
